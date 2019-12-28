@@ -2,7 +2,7 @@
 
 @media (min-width: 1170px) and (max-width: 1450px) {
     .main-menu ul li {
-        margin-left: 39px;
+        margin-left: 37px;
     }
     .tab-single > p {
         padding-right: 99px;
@@ -23,7 +23,7 @@
         padding: 0 30px;
     }
     .support-four-img {
-        padding: 276px 0 277px;
+        padding: 270px 0 277px;
     }
     .boxed-layout .wrapper .main-menu nav ul li .mega-menu li,
     .wrapper-box .main-menu nav ul li .mega-menu li {
