@@ -1234,12 +1234,16 @@ h3.blog-title {
     background-color: #31AAE2;
     color: #fff;
 }
-.social-icon li a.instagram:hover {
-    background-color: #10DD76;
+.social-icon li a.linkedin:hover {
+    background-color: #0E76A8;
     color: #fff;
 }
-.social-icon li a.pinterest:hover {
-    background-color: #E21B1B;
+.social-icon li a.youtube:hover {
+    background-color: #C4302B;
+    color: #fff;
+}
+.social-icon li a.github:hover {
+    background-color: #10DD76;
     color: #fff;
 }
 .social-icon {
