@@ -3215,12 +3215,32 @@ h1.title6.hm2 span {
 /*---------------  17. About page  ----------------*/
 
 .about-bg {
-    background: rgba(0, 0, 0, 0) url("images/flag_banner.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) url("images/flex.jpg") no-repeat scroll center bottom / cover;
     float: left;
     position: relative;
     width: 100%;
 }
 .about-bg::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+/*---------------  Meet Ben page  ----------------*/
+
+.about-bg2 {
+    background: rgba(0, 0, 0, 0) url("images/hot_cheeto_impression.jpg") no-repeat scroll center bottom / cover;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.about-bg2::before {
     background: #000 none repeat scroll 0 0;
     content: "";
     height: 100%;
