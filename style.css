@@ -4771,3 +4771,21 @@ span.tag {
 .boxed-layout .wrapper .intelligent-header {
     position: static;
 }
+.rotateimg90 {
+    -webkit-transform:rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.grayscale{
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: all .4s ease-in-out;
+}
+/* Remove effect on Hover */
+.grayscale:hover{
+    filter: none;
+    -webkit-filter: none;
+    transition: all ease-in-out .4s;
+}
