@@ -1050,6 +1050,7 @@ span.published2 i {
 
 .blog-container-inner {
     position: relative;
+    height: 100%;
 }
 .visual-inner {
     margin-top: 20px;
@@ -4788,4 +4789,12 @@ span.tag {
     filter: none;
     -webkit-filter: none;
     transition: all ease-in-out .4s;
+    transform: scale(1.1);
+}
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.display-flex > [class*='col-'] {
+    flex-grow: 1;
 }
