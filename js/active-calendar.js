@@ -1,103 +1,119 @@
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '/' + dd + '/' + yyyy;
+
 $('#calendar').fullCalendar({
-			header: {
-				left: 'today prev,next',
-				center: 'title',
-				right: 'month,agendaWeek,agendaDay'
-			},
-			defaultDate: '2016-10-12',
-			navLinks: true, // can click day/week names to navigate views
+	defaultView: 'month',
+	defaultDate: today,
 
-			weekNumbers: false,
-			weekNumbersWithinDays: true,
-			weekNumberCalculation: 'ISO',
-
-			editable: true,
-			eventLimit: false, // allow "more" link when too many events
-			events: [
-				{
-					title: '10:00 am Delegate Tony Wilt’s Fifth Annual Sporting Clays Shoot',
-					start: '2016-10-01'
-				},
-                {
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-04'
-				},
-                {
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-04'
-				},
-                {
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-06'
-				},
-                {
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-06'
-				},
-				{
-					title: '10:00 am Delegate Tony Wilt’s Fifth Annual Sporting Clays Shoot',
-					start: '2016-10-09T16:00:00'
-				},
-				{
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-14'
-				},
-				{
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-14'
-				},
-				{
-					title: '10:00 am Delegate Tony Wilt’s Fifth Annual Sporting Clays Shoot',
-					start: '2016-10-15'
-				},
-				{
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-17'
-				},
-				{
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-17'
-				},
-				{
-					title: '10:00 am Delegate Tony Wilt’s Fifth Annual Sporting Clays Shoot',
-					start: '2016-10-23'
-				},
-				{
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-26'
-				},
-				{
-					title: '6:00 pm Senator Amanda Chase Evening Reception',
-					start: '2016-10-26'
-				},
-				{
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-28'
-				},
-				{
-					title: '10:00 am Delegate Tony Wilt’s Fifth Annual Sporting Clays Shoot',
-					start: '2016-10-30'
-				},
-				{
-					title: '3:00 pm Delegate Jim LeMunyon Fundraising Lunch Reception',
-					start: '2016-10-31'
-				},
-				{
-					title: '12:00 pm Delegate Jeoin Ward Luncheon',
-					start: '2016-10-31'
-				},
-				{
-					title: 'Birthday Party',
-					start: '2016-10-13T07:00:00'
-				},
-                {
-					title: 'Meeting',
-					start: '2016-10-19T10:30:00',
-					end: '2016-10-12T12:30:00'
-				},
-				{
-					title: 'Lunch',
-					start: '2016-10-19T12:00:00'
-				},
-			]
+	eventRender: function (eventObj, $el) {
+		$el.popover({
+			title: eventObj.title,
+			content: eventObj.description,
+			trigger: 'hover',
+			placement: 'top',
+			container: 'body'
 		});
+	},
+
+	events: [{
+		title: 'Iowa Caucus Primary',
+		start: '2020-02-02'
+		},
+		{
+			title: 'New Hampshire Primary',
+			start: '2020-02-11'
+		},
+		{
+			title: 'Nevada Caucus Primary',
+			start: '2020-02-22'
+		},
+		{
+			title: 'South Carolina Primary',
+			start: '2020-02-29'
+		},
+		{
+			title: 'Super Tuesday',
+			description: 'Primary voting in Alabama, Arkansas, California, Colorado, Maine, Massachusetts, Minnesota,' +
+				'North Carolina, Okalahoma, Tennessee, Texas, Utah, Vermont, Virginia, American Samoa, and Democrats' +
+				'Abroad',
+			start: '2020-03-03'
+		},
+		{
+			title: 'More Primary Voting',
+			description: 'Primary voting in Idaho, Michigan, Mississippi, Missouri, North Dakota (Caucus), and Washington',
+			start: '2020-03-10'
+		},
+		{
+			title: 'More Primary Voting',
+			description: 'Primary voting in Arizona, Florida, Illinois, and Ohio',
+			start: '2020-03-17'
+		},
+		{
+			title: 'Georgia Primary',
+			start: '2020-02-24'
+		},
+		{
+			title: 'Puerto Rico Primary',
+			start: '2020-02-29'
+		},
+		{
+			title: 'More Primary Voting',
+			description: 'Democratic primary voting in Alaska, Hawaii, Louisiana, and Wyoming',
+			start: '2020-04-04'
+		},
+		{
+			title: 'Wisconsin Primary',
+			start: '2020-04-07'
+		},
+		{
+			title: 'More Primary Voting',
+			description: 'Primary voting in Connecticut, Delaware, Maryland, New York, Pennsylvania, and Rhode Island',
+			start: '2020-04-28'
+		},
+		{
+			title: 'Kansas and Guam Primary',
+			start: '2020-05-02'
+		},
+		{
+			title: 'Indiana Primary',
+			start: '2020-05-05'
+		},
+		{
+			title: 'Nebraska and West Virginia Primary',
+			start: '2020-05-12'
+		},
+		{
+			title: 'Kentucky and Oregon Primary',
+			start: '2020-05-19'
+		},
+		{
+			title: 'More Primary Voting',
+			description: 'Primary voting in Washington DC, Montana, New Jersey, New Mexico, South Dakota',
+			start: '2020-06-02'
+		},
+		{
+			title: 'Virgin Islands Democratic Caucus',
+			start: '2020-06-07'
+		},
+		{
+			title: 'Democratic National Convention',
+			description: 'The Democratic National Convention will be held in Milwaukee, WI.',
+			start: '2020-07-13',
+			end: '2020-07-16'
+		},
+		{
+			title: 'Republican National Convention',
+			description: 'The Democratic National Convention will be held in Charlotte, NC.',
+			start: '2020-08-24',
+			end: '2020-08-27'
+		},
+		{
+			title: 'National Election Day',
+			start: '2020-11-03'
+		},
+	]
+});
