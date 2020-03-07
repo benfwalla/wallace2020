@@ -1257,6 +1257,10 @@ h3.blog-title {
     background-color: #1DB954;
     color: #fff;
 }
+.social-icon li a.medium:hover {
+    background-color: #fff;
+    color: #000000;
+}
 .social-icon {
     padding-top: 5px;
 }
