@@ -1253,7 +1253,11 @@ h3.blog-title {
     color: #fff;
 }
 .social-icon li a.github:hover {
-    background-color: #10DD76;
+    background-color: #6e5494;
+    color: #fff;
+}
+.social-icon li a.spotify:hover {
+    background-color: #1DB954;
     color: #fff;
 }
 .social-icon {
@@ -4372,20 +4376,28 @@ span.tag {
 }
 .donate-sidebar-top li {
     display: inline-block;
-    margin-right: 15px;
+    margin-top: 25px;
+    transition: all .4s ease-in-out;
+}
+.donate-sidebar-top li:hover {
+    filter: none;
+    -webkit-filter: none;
+    transition: all ease-in-out .4s;
+    transform: scale(1.3);
 }
 .donate-sidebar-top a {
-    background-color: #a1a1a1;
-    border-radius: 5px;
+    background-color: #ea000d;
+    border-radius: 10px;
     color: #fff;
     font-size: 15px;
     font-weight: 600;
-    padding: 12px 25px;
+    padding: 25px 25px;
     -webkit-transition: all .3s ease 0s;
     transition: all .3s ease 0s;
 }
 .donate-sidebar-top a:hover {
     background-color: #ea000d;
+    transform: scale(1.1);
 }
 .donate-sidebar-bottom input,
 .donate-sidebar-bottom select {
@@ -4418,6 +4430,13 @@ span.tag {
 }
 .donate-text {
     margin-top: 34px;
+}
+.donate-text > ul {
+    list-style: circle;
+    padding-left: 30px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #333;
 }
 /*--------------- 21. Events page ----------------*/
 
@@ -4779,13 +4798,13 @@ span.tag {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.grayscale{
+.grayscale-pop{
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
     transition: all .4s ease-in-out;
 }
 /* Remove effect on Hover */
-.grayscale:hover{
+.grayscale-pop:hover{
     filter: none;
     -webkit-filter: none;
     transition: all ease-in-out .4s;

@@ -24,12 +24,24 @@ $('#calendar').fullCalendar({
 		start: '2020-02-02'
 		},
 		{
-			title: 'New Hampshire Primary',
+			title: 'ABC News Debate (8pm EST)',
 			start: '2020-02-11'
+		},
+		{
+			title: 'New Hampshire Primary',
+			start: '2020-02-07'
+		},
+		{
+			title: 'NBC News Debate (9pm EST)',
+			start: '2020-02-19'
 		},
 		{
 			title: 'Nevada Caucus Primary',
 			start: '2020-02-22'
+		},
+		{
+			title: 'CBS News Debate (8pm EST)',
+			start: '2020-02-25'
 		},
 		{
 			title: 'South Carolina Primary',
@@ -46,6 +58,10 @@ $('#calendar').fullCalendar({
 			title: 'More Primary Voting',
 			description: 'Primary voting in Idaho, Michigan, Mississippi, Missouri, North Dakota (Caucus), and Washington',
 			start: '2020-03-10'
+		},
+		{
+			title: 'CNN Debate (8pm EST)',
+			start: '2020-03-15'
 		},
 		{
 			title: 'More Primary Voting',
