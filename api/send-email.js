@@ -66,5 +66,6 @@ module.exports = async (req, res) => {
     console.log("Tried to send email");
     console.log(process.env.AWS_ACCESS_KEY_ID);
     console.log(process.env.AWS_SECRET_ACCESS_KEY);
+    console.log(process.env.TEAM);
 };
 
