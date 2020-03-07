@@ -1,4 +1,4 @@
 .idea
 .now
 venv
-.env
+.env.build
