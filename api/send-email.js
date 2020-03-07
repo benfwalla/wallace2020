@@ -54,12 +54,10 @@ module.exports = async (req, res) => {
     // Handle promise's fulfilled/rejected states
     sendPromise.then(
         function(data) {
-            console.log(data.MessageId);
+            res.end(data.MessageId);
         }).catch(
         function(err) {
-            console.error(err, err.stack);
+            res.end(err, err.stack);
         });
-
-    res.end(`Hello ${body.name}, you just parsed the request body!`)
 };
 
