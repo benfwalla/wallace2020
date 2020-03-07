@@ -11,9 +11,9 @@ module.exports = async (req, res) => {
 
     // Set the region
     AWS.config.update({
-        region: "us-east-1",
-        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+        region: process.env.BW_AWS_REGION,
+        accessKeyId: process.env.BW_AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.BW_AWS_SECRET_ACCESS_KEY
     });
 
     // Create sendEmail params
@@ -64,8 +64,9 @@ module.exports = async (req, res) => {
         });
 
     console.log("Tried to send email");
-    console.log(process.env.AWS_ACCESS_KEY_ID);
-    console.log(process.env.AWS_SECRET_ACCESS_KEY);
+    console.log(process.env.BW_AWS_REGION);
+    console.log(process.env.BW_AWS_ACCESS_KEY_ID);
+    console.log(process.env.BW_AWS_SECRET_ACCESS_KEY);
     console.log(process.env.TEAM);
 };
 
