@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
 
     // Set the region
     AWS.config.update({
-        region: process.env.AWS_REGION,
+        region: "us-east-1",
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
     });
@@ -57,10 +57,14 @@ module.exports = async (req, res) => {
     // Handle promise's fulfilled/rejected states
     sendPromise.then(
         function(data) {
-            res.end(data.MessageId);
+            res.send(data.MessageId);
         }).catch(
         function(err) {
-            res.end(err, err.stack);
+            res.send(err, err.stack);
         });
+
+    console.log("Tried to send email");
+    console.log(process.env.AWS_ACCESS_KEY_ID);
+    console.log(process.env.AWS_SECRET_ACCESS_KEY);
 };
 
