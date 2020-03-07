@@ -1,16 +1,19 @@
 // https://zeit.co/guides/handling-node-request-body
 // https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/ses-examples-sending-email.html
 
+// Load the AWS SDK for Node.js
+var AWS = require('aws-sdk');
+
+require('dotenv').config();
+
 module.exports = async (req, res) => {
     const { body } = req;
 
-    // Load the AWS SDK for Node.js
-    var AWS = require('aws-sdk');
     // Set the region
     AWS.config.update({
-        region: 'us-east-1',
-        accessKeyId: 'AKIAJGG3ROB6PNNP3I6Q',
-        secretAccessKey: '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'
+        region: process.env.AWS_REGION,
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+        secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
     });
 
     // Create sendEmail params

@@ -2,6 +2,7 @@
   "name": "wallace2020",
   "version": "1.0.0",
   "dependencies": {
-    "aws-sdk": "~2.635.0"
+    "aws-sdk": "~2.635.0",
+    "dotenv": "^8.2.0"
   }
 }
