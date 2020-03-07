@@ -660,9 +660,6 @@ a.min1:hover {
 .support-area {
     position: relative;
 }
-.support-area {
-    background-image: url("img/bg-img/bg1.jpg");
-}
 .support-area::after,
 .counter-area2::after {
     background: #000000 none repeat scroll 0 0;
@@ -1914,7 +1911,7 @@ a.video-popup i {
     padding: 0;
 }
 .tab-right-sidebar {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg2.jpg") no-repeat scroll center center / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center center / cover;
     padding: 104px 0 84px 100px;
 }
 .tab-single {
@@ -2219,7 +2216,7 @@ button.submit i {
 
 /*---------------   14.6 Subscribe  ----------------*/
 .subscribe-area {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg3.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     position: relative;
 }
 .subscribe-area::before {
@@ -2429,10 +2426,6 @@ h1.title6.hm2 span {
 
 /*-------- 15.2 Counter ---------*/
 
-.counter-area2 {
-    position: relative;
-    background-image: url("img/bg-img/bg4.jpg");
-}
 .counter-bottom2 {
     z-index: 99;
     position: relative;
@@ -2833,7 +2826,7 @@ h1.title6.hm2 span {
     background-color: inherit;
 }
 .reformation-area {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg5.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     position: relative;
 }
 .reformation-text {
@@ -2999,10 +2992,6 @@ h1.title6.hm2 span {
 
 /*----- 16.2 Team ------*/
 
-.meet-area-h4 {
-    background-image: url("img/bg-img/bg6.jpg");
-    position: relative;
-}
 .home-4 .meet-area-h4 p.up {
     margin-bottom: 0;
 }
@@ -3198,7 +3187,7 @@ h1.title6.hm2 span {
     background-color: #ea000d;
 }
 .support-four-img {
-    background: rgba(0, 0, 0, 0) url("img/banner/45.jpg") no-repeat scroll 0 0 / 100% 100%;
+    background: rgba(0, 0, 0, 0) no-repeat scroll 0 0 / 100% 100%;
     padding: 277px 0;
 }
 .meet-img-four > a {
@@ -3654,7 +3643,7 @@ h3.details-three {
     clear: both;
 }
 .issues-bg9 {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg9.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     float: left;
     position: relative;
     width: 100%;
@@ -3878,7 +3867,7 @@ h3.details-three {
 /*---------------  25. Team page   ----------------*/
 
 .team-bg {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg10.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     position: relative;
     clear: both;
 }
@@ -4000,7 +3989,7 @@ h3.details-three {
 /*---------------  27. Blog page   ----------------*/
 
 .Blog-bg {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg11.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     clear: both;
     position: relative;
 }
@@ -4358,7 +4347,7 @@ span.tag {
 /*--------------- 24. Donate page  ----------------*/
 
 .donate-bg {
-    background: rgba(0, 0, 0, 0) url("img/bg-img/bg12.jpg") no-repeat scroll center bottom / cover;
+    background: rgba(0, 0, 0, 0) no-repeat scroll center bottom / cover;
     position: relative;
     clear: both;
 }
@@ -4692,7 +4681,7 @@ span.tag {
     right: 98.5%;
 }
 .box-pattern {
-    background: rgba(0, 0, 0, 0) url("img/pattern/1.jpg") repeat scroll center center;
+    background: rgba(0, 0, 0, 0) repeat scroll center center;
 }
 .youtube-text h1.title6 {
     font-size: 49px;
@@ -4707,7 +4696,7 @@ span.tag {
     text-transform: uppercase;
 }
 .tab-accordion-area .accordion-head {
-    background: #303030 url("img/icon/accordion-up.png") no-repeat scroll right center;
+    background: #303030 no-repeat scroll right center;
     color: #fff;
     display: block;
     font-size: 14px;
@@ -4721,7 +4710,7 @@ span.tag {
     width: 100%;
 }
 .tab-accordion-area .accordion-head.collapsed {
-    background: #303030 url("img/icon/accordion-down.png") no-repeat scroll right center;
+    background: #303030 no-repeat scroll right center;
 }
 .tab-accordion-area .accordion-head:hover,
 .tab-accordion-area .accordion-head:focus {
