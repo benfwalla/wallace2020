@@ -9,6 +9,8 @@ require('dotenv').config();
 module.exports = async (req, res) => {
     const { body } = req;
 
+    console.log('New message from %s on %s', body.name, Date().toString());
+
     // Set the region
     AWS.config.update({
         region: process.env.BW_AWS_REGION,
@@ -33,14 +35,14 @@ module.exports = async (req, res) => {
                         "<br>" +
                         "Email: " + body.email +
                         "<br>" +
-                        "Phone: " + body.phone +
+                        "Subject: <b>" + body.subject + "</b>" +
                         "<br>" +
                         "Message: " + body.message
                 },
             },
             Subject: {
                 Charset: 'UTF-8',
-                Data: 'Test .js email'
+                Data: 'New Message from Wallace 2020: ' + body.subject
             }
         },
         Source: process.env.EMAIL,
@@ -55,10 +57,15 @@ module.exports = async (req, res) => {
     // Handle promise's fulfilled/rejected states
     sendPromise.then(
         function(data) {
-            res.send(data.MessageId);
+            console.log("Successfully sent email to %s", process.env.EMAIL);
+            console.log("MessageId: %s", data.MessageId);
+            res.send("Thank you! Your message has been sent to the team.");
         }).catch(
         function(err) {
-            res.send(err, err.stack);
+            console.log("Failed to send email to %s", process.env.EMAIL);
+            console.log(err);
+            console.log(err.stack);
+            res.send("Oops! Something went wrong, and we couldn't send your message.");
         });
 };
 

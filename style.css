@@ -4817,3 +4817,7 @@ span.tag {
 .row.display-flex > [class*='col-'] {
     flex-grow: 1;
 }
+.form-message {
+    color: #ea000d;
+    font-weight: bold;
+}
