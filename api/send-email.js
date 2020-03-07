@@ -18,14 +18,13 @@ module.exports = async (req, res) => {
 
     // Create sendEmail params
     var params = {
-        Destination: { /* required */
+        Destination: {
             ToAddresses: [
-                'benfwalla@gmail.com',
-                /* more items */
+                process.env.EMAIL,
             ]
         },
-        Message: { /* required */
-            Body: { /* required */
+        Message: {
+            Body: {
                 Html: {
                     Charset: "UTF-8",
                     Data: "You've received a message from Wallace2020.org:" +
@@ -44,10 +43,9 @@ module.exports = async (req, res) => {
                 Data: 'Test .js email'
             }
         },
-        Source: 'benfwalla@gmail.com', /* required */
+        Source: process.env.EMAIL,
         ReplyToAddresses: [
-            'benfwalla@gmail.com',
-            /* more items */
+            process.env.EMAIL,
         ],
     };
 
@@ -62,11 +60,5 @@ module.exports = async (req, res) => {
         function(err) {
             res.send(err, err.stack);
         });
-
-    console.log("Tried to send email");
-    console.log(process.env.BW_AWS_REGION);
-    console.log(process.env.BW_AWS_ACCESS_KEY_ID);
-    console.log(process.env.BW_AWS_SECRET_ACCESS_KEY);
-    console.log(process.env.TEAM);
 };
 

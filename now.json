@@ -3,6 +3,6 @@
     "BW_AWS_REGION": "@bw_aws_region",
     "BW_AWS_ACCESS_KEY_ID": "@bw_aws_access_key_id",
     "BW_AWS_SECRET_ACCESS_KEY": "@bw_aws_secret_access_key",
-    "TEAM": "@team"
+    "EMAIL": "@email"
   }
 }
