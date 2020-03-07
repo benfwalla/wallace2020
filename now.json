@@ -1,7 +1,7 @@
 {
   "functions": {
-    "api/*.py": {
-      "excludeFiles": "**/*.html;**/*.css;**/*.js"
+    "api/**/*.py": {
+      "excludeFiles": "css;fonts;images;img;js;lib"
     }
   }
 }
